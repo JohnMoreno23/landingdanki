@@ -54,6 +54,7 @@ body {
     border-style: solid;
     background-color: white;
     background-clip: padding-box;
+    border-radius: 20px;
 }
 
 .form h2 {
@@ -85,6 +86,7 @@ form p {
     width: 344px;
     height: 55px;
     border: 1px solid #CCCCCC;
+    border-radius: 12px;
     margin-top: 8px;
 }
 
@@ -104,7 +106,7 @@ form p {
     border-bottom: 0px solid #6d74be;
 }
 
-.input-submit-container { 
+.input-submit-container {
     text-align: center;
 }
 
@@ -115,11 +117,12 @@ form p {
     width: 519px;
     height: 270px;
     background-color: rgba(33, 35, 67, 0.7);
+    border-radius: 20px;
 }
+
 
 .container-list ul {
     list-style-position: inside;
-
 }
 
 .container-list ul li {
@@ -162,6 +165,11 @@ form p {
 
 }
 
+
+.clear {
+    clear: both;
+}
+
 .section-1 h2 {
     text-align: center;
     color: #462663;
@@ -187,4 +195,16 @@ form p {
 
 .container-single img {
     width: 70px;
+}
+
+.footer {
+    padding: 80px 0;
+    border-top: 4px solid #888888;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin-top: 8px;
+    color: #888888;
 }
