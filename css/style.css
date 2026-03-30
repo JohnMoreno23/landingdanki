@@ -14,14 +14,14 @@ body {
 /* HEADER */
 
 .center {
-    width: 1200px;
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 2%;
 }
 
 .header {
-    min-width: 1200px;
     width: 100%;
+    padding: 0 2%;
     height: 60px;
     background-color: #212343;
 }
@@ -34,8 +34,8 @@ body {
 /* BANNER */
 
 .container-banner {
-    min-width: 1200px;
     width: 100%;
+    padding: 0 2%;
     height: 557px;
     background-image: url('../imgs/header_bg.png');
     background-size: cover;
@@ -89,7 +89,7 @@ form p {
 
 .input-container input[type=text],
 .input-container input[type=email],
-.input-container input[type=number] {
+.input-container input[type=tel] {
     width: 344px;
     height: 55px;
     border: 1px solid #CCCCCC;
@@ -138,19 +138,21 @@ form p {
 }
 
 .container-t {
-    min-width: 1200px;
-    padding: 40px 0;
+    padding: 40px 2%;
     background-color: #ddd;
     text-align: center;
     width: 100%;
 }
+
+
 
 .container-t h2 {
     font-weight: normal;
 }
 
 .container-t p {
-    width: 698px;
+    width: 100%;
+    max-width: 768px;
     display: inline-block;
     text-align: justify;
     margin: 15px 0;
@@ -167,8 +169,7 @@ form p {
 }
 
 .section-1 {
-    padding: 90px 0;
-    /* min-width: 1200px; */
+    padding: 90px 2%;
 
 }
 
@@ -216,4 +217,90 @@ form p {
 .footer p {
     margin-top: 8px;
     color: #888888;
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        height: auto;
+    }
+
+    .header img {
+        margin: 0;
+    }
+
+    .container-banner {
+        width: 100%;
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+    }
+
+    .form {
+        margin-top: 30px;
+        max-width: 400px;
+        padding: 10px;
+        display: inline-block;
+        width: 60%;
+        height: 100%;
+        float: right;
+        top: 0;
+    }
+
+    .container-list {
+        padding: 30px 0;
+        width: 40%;
+        max-width: 500px;
+        height: auto;
+        float: left;
+        margin-top: 30px;
+        display: inline-block;
+    }
+
+    .input-container input[type=text],
+    .input-container input[type=email],
+    .input-container input[type=tel] {
+        width: 100%;
+        height: 55px;
+    }
+
+    .form input[type=submit] {
+        max-width: 280px;
+        width: 100%;
+        height: 56px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .container-t {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .container-list {
+        margin-top: 0;
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .form {
+        margin-top: 30px;
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .container-single {
+        width: 100%;
+        max-width: 600px;
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
 }
