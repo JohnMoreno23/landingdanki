@@ -89,7 +89,7 @@ form p {
 
 .input-container input[type=text],
 .input-container input[type=email],
-.input-container input[type=number] {
+.input-container input[type=tel] {
     width: 344px;
     height: 55px;
     border: 1px solid #CCCCCC;
